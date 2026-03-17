@@ -1,0 +1,51 @@
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+/* Center Slider Start */
+.center-slider .swiper-slide {
+  background: #eee;
+  border-radius: 8px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), scale 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0.92) !important;
+  will-change: transform;
+}
+.center-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.center-slider .swiper-slide.swiper-slide-active {
+  transform: scale(1) !important;
+  /* background: #fc0; */
+}
+
+.center-slider .swiper-wrapper {
+  position: relative;
+  width: 90vw;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* height: 400px; */
+}
+.center-slider.center-slider-with-dots .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+  bottom: 0;
+}
+.center-slider.center-slider-with-dots .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d1d5db;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.center-slider.center-slider-with-dots .swiper-pagination-bullet-active {
+  background: #000000;
+  width: 10px;
+  border-radius: 10px;
+}
+.center-slider.center-slider-with-dots .swiper-pagination-bullet:hover {
+  background: #000000;
+  opacity: 0.8;
+}
+/* Center Slider End */
